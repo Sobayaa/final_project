@@ -1,0 +1,1 @@
+Database Error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'service' cannot be nullMail Error: SMTP Error: Could not authenticate.

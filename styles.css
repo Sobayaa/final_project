@@ -1,0 +1,413 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Header Section */
+.header {
+  background-image: url('https://localdentalclinics.com.au/blogs/1678785522.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #3366cc;
+  padding: 100px 20px;
+  position: relative;
+
+}
+
+
+
+.header h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #004aad;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2px;
+}
+
+.header p {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.header .button-group a button {
+  background-color: #f9f9f9;
+  color: #3366cc;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Button Group */
+.button-group {
+  display: flex; /* ใช้ Flexbox ในการจัดปุ่ม */
+  justify-content: center; /* จัดให้ปุ่มอยู่กลาง */
+  gap: 15px; /* ระยะห่างระหว่างปุ่ม */
+  margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+/* Buttons */
+.button-group a button {
+  background-color: #fff; /* พื้นหลังปุ่มเป็นสีขาว */
+  color: #3366cc; /* ตัวอักษรเป็นสีน้ำเงิน */
+  border: none; /* ไม่มีกรอบ */
+  padding: 12px 30px; /* ระยะห่างภายในปุ่ม */
+  font-size: 1rem; /* ขนาดฟอนต์ */
+  border-radius: 5px; /* มุมโค้งมน */
+  cursor: pointer; /* แสดง cursor เป็น pointer เมื่อ hover */
+  transition: background-color 0.3s ease; /* ทำให้การเปลี่ยนสีพื้นหลังลื่น */
+}
+
+/* Hover Effect for Buttons */
+.button-group a button:hover {
+  background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+}
+
+/* Auth Buttons (Sign In / Logout) */
+.auth-buttons {
+  position: absolute; /* จัดให้ปุ่มไปอยู่มุมขวาบน */
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+.auth-buttons a button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px; /* ขนาดปุ่ม */
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons a button:hover {
+  background-color: #0056b3;
+}
+
+.signin-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3; /* ตั้งค่า z-index ให้สูงกว่าพื้นหลัง */
+}
+
+.signin-button button {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signin-button button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Button Styling */
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-logout {
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #333333;
+}
+
+/* Featured Services Section */
+.featured-services {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.featured-services h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #3366cc;
+}
+
+.featured-services .services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.featured-services .service-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 45%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featured-services .service-card p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Our Team Section */
+.our-team {
+  text-align: center;
+  margin: 40px 20px;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.our-team h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.team-member p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.team-buttons {
+  margin-top: 30px;
+}
+
+.team-buttons a button {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.team-buttons a button:hover {
+  background-color: #003580;
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+  text-align: center;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-reviews .section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #3366cc;
+}
+
+.customer-reviews .section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.review-card .review-text {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.review-author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #3366cc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-author .reviewer-name {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+  text-align: left;
+}
+
+.footer {
+  background-color: #3366cc;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.footer a button {
+  background-color: #fff;
+  color: #3366cc;
+  border: 1px solid #fff;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer a button:hover {
+  background-color: #f5f5f5;
+  color: #3366cc;
+}
+
+@media (min-width: 768px) {
+  .services-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+      justify-content: center; /* จัดตำแหน่งปุ่มตรงกลาง */
+  }
+
+  .button-group a button {
+      width: 45%;
+      padding: 12px 20px; /* เพิ่มการ padding ให้ปุ่มใหญ่ขึ้น */
+      font-size: 1.1rem; /* ขนาดฟอนต์ใหญ่ขึ้น */
+      border-radius: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .button-group {
+      display: flex;
+      gap: 20px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+      justify-content: center; /* จัดตำแหน่งปุ่มตรงกลาง */
+  }
+
+  .button-group a button {
+      width: auto; /* ให้ปุ่มมีความกว้างอัตโนมัติ */
+      padding: 14px 25px; /* ปรับขนาด padding */
+      font-size: 1.2rem; /* เพิ่มขนาดฟอนต์ */
+      border-radius: 6px; /* ปรับขอบปุ่มให้กลมขึ้น */
+  }
+}
